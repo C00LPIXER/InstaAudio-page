@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - InstaAudio</title>
+  <meta name="description" content="Privacy Policy for InstaAudio Downloader Chrome extension." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://c00lpixer.github.io/InstaAudio-page/privacy-policy.html" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+      background: #0a0a1a;
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+    .bg {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(ellipse at 20% 10%, rgba(0,149,246,0.1), transparent 50%),
+                  radial-gradient(ellipse at 80% 90%, rgba(131,58,180,0.08), transparent 50%);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+    .top-link {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: #7ec8ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .top-link:hover { text-decoration: underline; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.15;
+      background: linear-gradient(135deg, #ffffff 0%, #0095f6 55%, #833ab4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .muted {
+      color: #8f8f9f;
+      margin-top: 0;
+      margin-bottom: 32px;
+      font-size: 14px;
+    }
+    section {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 14px;
+    }
+    h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #ffffff;
+    }
+    p, li { color: #d3d3dc; }
+    ul, ol {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      padding-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 14px;
+      background: rgba(255,255,255,0.02);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid rgba(255,255,255,0.1);
+      text-align: left;
+      padding: 10px;
+      vertical-align: top;
+    }
+    th { color: #ffffff; background: rgba(0,149,246,0.14); }
+    a { color: #7ec8ff; }
+    .footer-note {
+      margin-top: 28px;
+      color: #9d9daa;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+  <main class="wrap">
+    <a class="top-link" href="./">&larr; Back to InstaAudio</a>
+    <h1>Privacy Policy</h1>
+    <p class="muted"><strong>Last Updated:</strong> March 31, 2026</p>
+
+    <section>
+      <h2>Overview</h2>
+      <p>
+        InstaAudio Downloader (the Extension) is a browser extension that allows users
+        to download voice messages from their own Instagram Direct Message conversations.
+        We are committed to protecting your privacy.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data Collection</h2>
+      <p><strong>We do not collect, store, transmit, or sell any personal data.</strong></p>
+      <p>
+        The Extension operates entirely within your browser. No data ever leaves your
+        device or is sent to any external server.
+      </p>
+    </section>
+
+    <section>
+      <h2>How the Extension Works</h2>
+      <ol>
+        <li>
+          <strong>Network Interception (Local Only):</strong> The Extension monitors
+          network requests made by Instagram in your browser tab to detect audio/voice
+          message file URLs. This monitoring happens entirely locally in your browser.
+        </li>
+        <li>
+          <strong>Audio Playback and Download:</strong> When you choose to play or
+          download a voice message, the audio data is fetched directly from Instagram's
+          servers to your browser. No intermediary servers are involved.
+        </li>
+        <li>
+          <strong>No Account Access:</strong> The Extension does not access, read, or
+          store your Instagram credentials, account information, messages, contacts, or
+          any other personal data.
+        </li>
+        <li>
+          <strong>No Analytics or Tracking:</strong> The Extension does not include any
+          analytics, telemetry, crash reporting, or tracking of any kind.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Permissions Explained</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Why It's Needed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>webRequest</td>
+            <td>To detect audio file URLs in network traffic (locally, in your browser).</td>
+          </tr>
+          <tr>
+            <td>downloads</td>
+            <td>To save voice message files to your computer.</td>
+          </tr>
+          <tr>
+            <td>activeTab</td>
+            <td>To identify which tab is running Instagram.</td>
+          </tr>
+          <tr>
+            <td>tabs</td>
+            <td>To match captured audio to the correct browser tab.</td>
+          </tr>
+          <tr>
+            <td>host_permissions (CDN domains)</td>
+            <td>To fetch audio files for playback from Instagram's content delivery servers.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Data Storage</h2>
+      <ul>
+        <li>Audio URLs are stored temporarily in browser memory only while the tab is open.</li>
+        <li>When you close the tab or switch chats, stored URLs are cleared.</li>
+        <li>Nothing is written to disk except files you explicitly choose to download.</li>
+        <li>No cookies, local storage, or IndexedDB is used.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Third-Party Services</h2>
+      <p>
+        The Extension does not communicate with any third-party services. All operations
+        are performed locally between your browser and Instagram's servers.
+      </p>
+    </section>
+
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>
+        The Extension does not knowingly collect any data from anyone, including children
+        under 13.
+      </p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>
+        If we update this Privacy Policy, we will update the Last Updated date above.
+        Continued use of the Extension after changes constitutes acceptance of the updated policy.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us:</p>
+      <ul>
+        <li>Email: your-email@example.com</li>
+        <li>GitHub: <a href="https://github.com/C00LPIXER/InstaAudio" target="_blank" rel="noopener noreferrer">https://github.com/C00LPIXER/InstaAudio</a></li>
+      </ul>
+    </section>
+
+    <p class="footer-note">
+      This extension is not affiliated with, endorsed by, or connected to Instagram or Meta Platforms, Inc.
+    </p>
+  </main>
+</body>
+</html>
